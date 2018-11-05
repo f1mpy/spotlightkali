@@ -24,5 +24,5 @@ vmhgfs-fuse -o allow_other .host:/ /mnt/hgfs
 chmod +x /etc/rc.local
 shutdown
 -
-CONFIG YOR VM SHARED FOLDERS
+CONFIGURATE YOR VM SHARED FOLDERS
 -
