@@ -13,3 +13,16 @@ reboot
 -- INSTALL FAST TOOLS
 apt-get install build-essential linux-headers-amd64 pv netcat-traditional socat htop mc screen vim strace ltrace edb-debugger aptitude apt-file automake cmake bison dc libtool lzop mtr php-gmp gcc-multilib
 --
+
+-- SHARED FOLDERS
+mkdir -p /mnt/hgfs
+nano /etc/rc.local
+-
+#!/bin/bash
+vmhgfs-fuse -o allow_other .host:/ /mnt/hgfs
+-
+chmod +x /etc/rc.local
+shutdown
+-
+CONFIG YOR VM SHARED FOLDERS
+-
