@@ -1,0 +1,15 @@
+
+-- ISO KALI MATE
+http://cdimage.kali.org/kali-images/kali-weekly/
+--
+
+-- UPDATE and INSTALL VM TOOLS
+apt-get update
+apt-get upgrade
+apt-get install lightdm open-vm-tools-desktop
+reboot
+--
+
+-- INSTALL FAST TOOLS
+apt-get install build-essential linux-headers-amd64 pv netcat-traditional socat htop mc screen vim strace ltrace edb-debugger aptitude apt-file automake cmake bison dc libtool lzop mtr php-gmp gcc-multilib
+--
